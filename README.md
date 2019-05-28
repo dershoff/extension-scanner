@@ -22,7 +22,6 @@ es.scan_all_extensions()
 es.run( ['pdf', 'doc'], action='scan' )
 
 
-
 ## Or more explicitly:
 s.add_target_extensions( ['pdf', 'csv' ])
 s.set_action( 'copy' )
