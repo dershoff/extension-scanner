@@ -13,18 +13,16 @@ If you want to extract from those folders all files like:
 
 
 ## Example
-es = ExtensionScanner()
-
-es.set_search_path( '/media/dmitry/Data/Docs/recovering_files/recovered' )
-es.set_storage_path( '/media/dmitry/Data/Docs/recovering_files/test' )
-
-es.scan_all_extensions()
-es.run( ['pdf', 'doc'], action='scan' )
+</br>es = ExtensionScanner()
+</br>es.set_search_path( '/media/dmitry/Data/Docs/recovering_files/recovered' )
+</br>es.set_storage_path( '/media/dmitry/Data/Docs/recovering_files/test' )
+</br>es.scan_all_extensions()
+</br>es.run( ['pdf', 'doc'], action='scan' )
 
 
 ## Or more explicitly:
-s.add_target_extensions( ['pdf', 'csv' ])
-s.set_action( 'copy' )
-s.process()
+</br>s.add_target_extensions( ['pdf', 'csv' ])
+</br>s.set_action( 'copy' )
+</br>s.process()
 
 
