@@ -12,6 +12,7 @@ If you want to extract from those folders all files like:
 [*.pdf + *.cvs + *.jpeg]  - go for ExtensionScanner.
 
 
+## Example
 es = ExtensionScanner()
 
 es.set_search_path( '/media/dmitry/Data/Docs/recovering_files/recovered' )
@@ -20,9 +21,11 @@ es.set_storage_path( '/media/dmitry/Data/Docs/recovering_files/test' )
 es.scan_all_extensions()
 es.run( ['pdf', 'doc'], action='scan' )
 
-# or more explicitly:
-# s.add_target_extensions( ['pdf', 'csv' ])
-# s.set_action( 'copy' )
-# s.process()
+
+
+## Or more explicitly:
+s.add_target_extensions( ['pdf', 'csv' ])
+s.set_action( 'copy' )
+s.process()
 
 
